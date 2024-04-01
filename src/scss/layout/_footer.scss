@@ -2,10 +2,22 @@
     position: relative;
     padding: 65px 15px 36px;
     background-color: $darkColor;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 32px;
+    @media all and (width > 768px){
+        padding: 50px 39px 40px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    @media all and (width > 1200px){
+        padding: 50px 370px 40px;
+        
+    }
 
     &__arrow{
         background-color: $white;
@@ -29,14 +41,20 @@
     }
 
     &__links{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-
+        @media all and (width > 768px){
+            align-items: flex-start;;
+        }
+        
         &--content{
             list-style: none;
             text-align: center;
+            @media all and (width > 768px){
+                text-align: left;
+            }
             & .item {
                 text-decoration: none;
                 font-family: $mainFont;
@@ -47,12 +65,16 @@
                 &:hover{
                     color: $contrastColor;
                 }
+                
             }
         } 
         
         &--rrss{
             list-style: none;
             text-align: center;
+            @media all and (width > 768px){
+                text-align: left;
+            }
             & .item {
                 text-decoration: none;
                 font-family: $mainFont;
@@ -68,9 +90,14 @@
     }
 
     &__copyright{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media all and (width > 768px){
+            order: -1;
+            align-items: flex-start;
+        }
 
         &--item{
             color: $white;

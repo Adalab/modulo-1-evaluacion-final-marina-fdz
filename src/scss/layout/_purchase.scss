@@ -5,24 +5,48 @@
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 41px;
-    
+    @media all and (width > 768px){
+        padding: 36px 39px 60px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 27.7px;
+        grid-row-gap: 43px;
+        grid-column-gap: 26px;
+    }
+    @media all and (width > 1200px){
+        padding: 61px 82px 60px;
+        
+        
+    }
 
     &__title{
         font-family: $secondaryFont;
         font-size: 2.4rem;
         line-height: 3rem;
         color: $black;
+        @media all and (width > 768px){
+            grid-column: span 3;
+            font-size: 3.2rem;
+            line-height: 4.5rem;
+        }
     }
 
     &__reason{
         padding: 0 55px;
         text-align: center;
+        @media all and (width > 768px){
+            padding: 0;
+        }
 
         &--title{
             font-family: $secondaryFont;
             font-size: 1.8rem;
             line-height: 3rem;
             color: $black;
+            @media all and (width > 768px){
+                font-size: 2.4rem;
+                line-height: 3rem;
+                padding-bottom: 18px;
+            }
         }
 
         &--text{
@@ -30,6 +54,12 @@
             font-size: 1.8rem;
             line-height: 3rem;
             color: $black;
+            @media all and (width > 768px){
+                width: 100%;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+            
         }
     }
 
@@ -39,11 +69,22 @@
         font-size: 2rem;
         color: $white;
         background-color: $contrastColor;
-        padding: 10px 30px;
         border-radius: 22.5px;
-
+        width: 18.4rem;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &:hover{
             background-color: $mediumColor;
+        }
+        @media all and (width > 768px){
+            grid-column: 2 / 3;
+            margin-top: 14px;
+            width: 21rem;
+        }
+        @media all and (width > 1200px){
+            width: 25.5rem;
         }
     }
 }
