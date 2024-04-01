@@ -4,13 +4,17 @@
     left: 0;
     top: 0;
     &__menu{
+        position: absolute;
         background-color: $mediumColor;
         width: 3.71rem;
         aspect-ratio: 1;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: background-color 0.5s,
+        width 0.5s ;
         &:hover{
+            width: 5rem;
             background-color: $contrastColor;
         }
 

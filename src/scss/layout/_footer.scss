@@ -26,16 +26,19 @@
         border-radius: 50%;
         position: absolute;
         top: 0;
-        left: 50%;;
+        left: 50%;
         transform: translate(-50%, -50%);
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         &--icon{
             position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            transition: hue-rotate 0.5s,
+            transform 1s;
             &:hover{
                 filter: hue-rotate(190deg);
+                transform: translateY(-40%);
             }
         }
     }
