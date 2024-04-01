@@ -1,0 +1,42 @@
+.window{
+    padding: 22px 15px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__cathegory{
+        font-family: $mainFont;
+        font-size: 1.4rem;
+        line-height: 2.14;
+        color: $neutralColor;
+    }
+
+    &__title{
+        font-family: $secondaryFont;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        padding-bottom: 20px;
+    }
+
+    &__text{
+        font-family: $mainFont;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        padding-bottom: 26px;
+    }
+
+    &__button{
+        text-decoration: none;
+        font-family: $mainFont;
+        font-size: 2rem;
+        color: $contrastColor;
+        border: 2px solid $contrastColor;
+        border-radius: 22.5px;
+        padding: 10px 25px;
+        &:hover{
+            border: 2px solid $mediumColor;
+            color: $mediumColor;
+        }
+
+    }
+}

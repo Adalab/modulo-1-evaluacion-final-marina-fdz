@@ -1,0 +1,23 @@
+.header{
+    position: sticky;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    &__menu{
+        background-color: $mediumColor;
+        width: 3.71rem;
+        height: 3.71rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: $contrastColor;
+        }
+
+        &--burger{
+            width: 90%;
+        }
+        
+    }
+
+}

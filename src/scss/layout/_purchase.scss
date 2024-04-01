@@ -1,0 +1,48 @@
+.purchase{
+    background-color: $lightColor;
+    padding: 29px 15px 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 41px;
+
+    &__title{
+        font-family: $secondaryFont;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        color: $black;
+    }
+
+    &__reason{
+        padding: 0 55px;
+        text-align: center;
+
+        &--title{
+            font-family: $secondaryFont;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            color: $black;
+        }
+
+        &--text{
+            font-family: $mainFont;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            color: $black;
+        }
+    }
+
+    &__button{
+        text-decoration: none;
+        font-family: $mainFont;
+        font-size: 2rem;
+        color: $white;
+        background-color: $contrastColor;
+        padding: 10px 30px;
+        border-radius: 22.5px;
+
+        &:hover{
+            background-color: $mediumColor;
+        }
+    }
+}
