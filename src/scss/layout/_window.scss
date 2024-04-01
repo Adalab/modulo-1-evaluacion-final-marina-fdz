@@ -1,13 +1,13 @@
 .window{
-    padding: 22px 15px 45px;
+    padding: 61.9px 15px 45px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     @media all and (width > 768px){
-        padding: 22px 39px 60px;
+        padding: 37px 39px 60px;
     }
     @media all and (width > 1200px){
-        padding: 50px 275px 60px;
+        padding: 65px 275px 60px;
     }
 
     &__cathegory{
@@ -57,16 +57,23 @@
         color: $contrastColor;
         border: 2px solid $contrastColor;
         border-radius: 22.5px;
-        padding: 10px 25px;
+        height: 4.5rem;
+        width: 7.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
         &:hover{
+            width: 4.5rem;
             border: 2px solid $mediumColor;
             color: $mediumColor;
+            
         }
         @media all and (width > 768px){
-            padding: 10px 32.5px;
+            width: 9.1rem;
         }
-        @media all and (width > 768px){
-            padding: 10px 67px;
+        @media all and (width > 1200px){
+            width: 16rem;
         }
 
     }

@@ -14,8 +14,6 @@
     }
     @media all and (width > 1200px){
         padding: 61px 82px 60px;
-        
-        
     }
 
     &__title{
@@ -75,8 +73,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: background-color 0.5s,
+        width 0.5s;
         &:hover{
             background-color: $mediumColor;
+            width: 15rem;
         }
         @media all and (width > 768px){
             grid-column: 2 / 3;
