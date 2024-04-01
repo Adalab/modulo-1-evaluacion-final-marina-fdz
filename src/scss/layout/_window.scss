@@ -3,12 +3,24 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @media all and (width > 768px){
+        padding: 22px 39px 60px;
+    }
+    @media all and (width > 1200px){
+        padding: 50px 275px 60px;
+    }
 
     &__cathegory{
         font-family: $mainFont;
         font-size: 1.4rem;
         line-height: 2.14;
         color: $neutralColor;
+        @media all and (width > 768px){
+            line-height: 3rem;
+        }
+        @media all and (width > 1200px){
+            font-size: 1.6rem;
+        }
     }
 
     &__title{
@@ -16,6 +28,15 @@
         font-size: 2.4rem;
         line-height: 3rem;
         padding-bottom: 20px;
+        @media all and (width > 768px){
+            font-size: 2.6rem;
+            line-height: 4.5rem;
+            padding-bottom: 2.7rem;
+        }
+        @media all and (width > 1200px){
+            font-size: 3.2rem;
+            padding-bottom: 32px;
+        }
     }
 
     &__text{
@@ -23,6 +44,10 @@
         font-size: 1.8rem;
         line-height: 3rem;
         padding-bottom: 26px;
+        @media all and (width > 768px){
+            font-size: 2rem;
+            padding-bottom: 27px;
+        }
     }
 
     &__button{
@@ -36,6 +61,12 @@
         &:hover{
             border: 2px solid $mediumColor;
             color: $mediumColor;
+        }
+        @media all and (width > 768px){
+            padding: 10px 32.5px;
+        }
+        @media all and (width > 768px){
+            padding: 10px 67px;
         }
 
     }
