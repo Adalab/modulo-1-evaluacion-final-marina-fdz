@@ -68,7 +68,9 @@
                 &:hover{
                     color: $contrastColor;
                 }
-                
+                &:active{
+                    color: $neutralColor;
+                }
             }
         } 
         
@@ -87,6 +89,9 @@
                 color: $white;
                 &:hover{
                     color: $contrastColor;
+                }
+                &:active{
+                    color: $neutralColor;
                 }
             }
         }        

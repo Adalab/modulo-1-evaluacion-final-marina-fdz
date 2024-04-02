@@ -17,6 +17,9 @@
             width: 5rem;
             background-color: $contrastColor;
         }
+        &:active{
+            background-color: $neutralColor;
+        }
 
         &--burger{
             width: 40%;
