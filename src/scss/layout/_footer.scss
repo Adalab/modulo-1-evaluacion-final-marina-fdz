@@ -34,11 +34,22 @@
         
         &--icon{
             position: relative;
-            transition: hue-rotate 0.5s,
-            transform 1s;
+            transition: hue-rotate 0.5s;
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            @keyframes bounce {
+                from{
+                    transform: translate(0, -30%);
+                }
+                to {
+                    transform: translate(0, 20%);
+                }
+            }
             &:hover{
                 filter: hue-rotate(190deg);
-                transform: translateY(-40%);
             }
         }
     }
